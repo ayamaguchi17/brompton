@@ -1,15 +1,50 @@
-* {
-  margin: 0px;
-  font-family: "Bilo", "Helvetica Neue", Arial, sans-serif;
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
 }
 
-.nav-container {
+body {
+  font-family: "Bilo", "Helvetica Neue", Arial, sans-serif;
+  color: #383e45;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
   max-width: 960px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
+  padding: 0 4%;
 }
 
-.fixed-nav-bar {
+.site-title {
+  width: 200px;
+}
+
+.site-title img {
+  width: 100%;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+
+.fixed-navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,68 +58,44 @@
 #header {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-}
-
-#logo-img {
-  margin-left: 4%;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.navbar {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 4%;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-}
-
-ul li {
-  margin-left: 30px;
-  font-size: 23px;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover,
-a:active {
-  color: rgb(179, 2, 2);
-}
-
-.main-visual-container{
-  height:600px;
-}
-
-#main-visual {
-  width: 100%;
-  max-width: 1920px;
-  height: 600px;
-  object-fit: cover;
-}
-
-.container {
-  max-width: 960px;
-  text-align: center;
+  align-items: center;
   margin: 0 auto;
+  height: 80px;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  margin-left: 30px;
+  font-size: 22px;
+}
+
+#header li a {
+  color: #24292e;
+}
+
+#header li a:hover {
+  color: #ae1b01;
+}
+
+#mainvisual {
+  max-width: 1600px;
+}
+
+#mainvisual img {
+  width: 100%;
+  object-fit: cover;
 }
 
 #about {
   margin-top: 0px;
-  background-color:rgb(238, 238, 238)
+  background-color: rgb(238, 238, 238);
 }
 
-#about-img {
+#about img {
   width: 200px;
   border-radius: 50%;
   margin-right: 30px;
@@ -97,45 +108,36 @@ a:active {
   text-underline-offset: 8px;
   display: inline-block;
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
-.section-container-about {
+#about .content {
   display: flex;
   align-items: flex-start;
-  
-  padding: 4%;
+  padding-bottom: 50px;
 }
 
-.section-container-about-title {
+#about .text {
   text-align: left;
-  margin-bottom: 10px;
 }
-
-.section-container-about-text {
-  text-align: left;
+#about .text p {
+  padding-top: 10px;
 }
 
 #bike {
   background-color: rgb(247, 243, 235);
 }
 
-.section-container-bike {
-  margin-bottom: 100px;
-  display: flex;
-  padding: 4%;
-}
-
-/* //center photos */
-.section-container-bike-ul {
+#bike ul {
   padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.bike-img {
-  max-width: 100%;
+#bike img {
+  /* max-width: 100%; */
 }
 
-.section-container-bike-box {
+#bike li {
   margin-left: 5px;
   margin-right: 5px;
   text-align: center;
@@ -143,18 +145,20 @@ a:active {
   font-size: 1rem;
 }
 
-.bike-title {
-  margin-bottom: 10px;
-}
-
-.bike-text {
+#bike p {
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
 footer {
   text-align: center;
-  margin: 5px;
+  margin-top: 100px;
+  margin-bottom: 5px;
 }
+
+
+
+
 
 @media only screen and (max-width: 680px) {
   .fixed-nav-bar {
@@ -168,44 +172,55 @@ footer {
     background-color: #ffffff;
   }
 
-  #logo-img {
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 30px;
-    padding-top: 15px;
-    padding-bottom: px;
+  .site-title {
+    width: 150px;
   }
 
-  ul li {
-    margin-left: 20px;
-    font-size: 18px;
-  }
-  .about-title {
-    margin-bottom: 50px;
+  .site-title img {
+    width: 100%;
   }
 
-  .section-container-about {
-    display: inline-block;
+  #header li {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  #mainvisual img {
+    height: calc(100vh - 60px);
+  }
+
+  #about img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 0px;
+  }
+
+  #about .content {
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
   }
 
-  .section-container-about-title {
+  #about h2 {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 20px;
   }
 
-  .section-container-about-text {
+  #about .text p {
     text-align: justify;
+    margin-top: 20px;
   }
 
-  .section-container-bike-ul {
-    display: inline-block;
-    align-items: center;
-    margin-bottom: 30px;
+  #bike ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
-  .section-container-bike ul li {
-    align-items: center;
+  #bike li {
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 1rem;
   }
 }

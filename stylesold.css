@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0px;
+  font-family: "Bilo", "Helvetica Neue", Arial, sans-serif;
+}
+
+.nav-container {
+  max-width: 960px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+#logo-img {
+  margin-left: 4%;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 4%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-left: 30px;
+  font-size: 23px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: rgb(179, 2, 2);
+}
+
+.main-visual-container{
+  height:600px;
+}
+
+#main-visual {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 960px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#about {
+  margin-top: 0px;
+  background-color:rgb(238, 238, 238)
+}
+
+#about-img {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.section-title {
+  font-family: "Bilo", "Helvetica Neue", Arial, sans-serif;
+  font-size: 2em;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section-container-about {
+  display: flex;
+  align-items: flex-start;
+  
+  padding: 4%;
+}
+
+.section-container-about-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.section-container-about-text {
+  text-align: left;
+}
+
+#bike {
+  background-color: rgb(247, 243, 235);
+}
+
+.section-container-bike {
+  margin-bottom: 100px;
+  display: flex;
+  padding: 4%;
+}
+
+/* //center photos */
+.section-container-bike-ul {
+  padding: 0px;
+}
+
+.bike-img {
+  max-width: 100%;
+}
+
+.section-container-bike-box {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.bike-title {
+  margin-bottom: 10px;
+}
+
+.bike-text {
+  margin-bottom: 50px;
+}
+
+footer {
+  text-align: center;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 680px) {
+  .fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+  }
+
+  #logo-img {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: px;
+  }
+
+  ul li {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .about-title {
+    margin-bottom: 50px;
+  }
+
+  .section-container-about {
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .section-container-about-title {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .section-container-about-text {
+    text-align: justify;
+  }
+
+  .section-container-bike-ul {
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .section-container-bike ul li {
+    align-items: center;
+  }
+}
