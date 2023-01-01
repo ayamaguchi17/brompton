@@ -57,6 +57,7 @@ li {
   width: 100%;
   /* height: 80px; */
   background-color: #ffffff;
+  
 }
 
 #header {
@@ -65,6 +66,7 @@ li {
   align-items: center;
   margin: 0 auto;
   height: 80px;
+  
 }
 
 nav {
@@ -88,6 +90,7 @@ nav img {
 
 #header li a {
   color: #24292e;
+  transition: 0.6s;
 }
 
 #header li a:hover {
@@ -98,14 +101,21 @@ nav img {
   flex-direction: column;
 }
 
+.langBtn a:hover{
+  opacity: 0.5;
+}
+
+
 #mainVisual {
   max-width: 1600px;
   height: calc();
+  
 }
 
 #mainVisual img {
   width: 100%;
   object-fit: cover;
+  
 }
 
 #about {
