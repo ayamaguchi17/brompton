@@ -179,10 +179,17 @@ nav img {
   margin-bottom: 50px;
 }
 
+#tri-img {
+  width:100%;
+  opacity: 10%;
+  margin: 100px auto 100px;
+}
+
 footer {
   text-align: center;
-  margin-top: 300px;
   margin-bottom: 5px;
+  color:#c9c9c9;
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 600px) {
