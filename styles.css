@@ -33,7 +33,7 @@ li {
 }
 
 .site-title {
-  width: 200px;
+  width: 150px;
 }
 
 .site-title img {
@@ -75,7 +75,7 @@ nav {
 }
 
 nav img {
-  max-width: 27px;
+  max-width: 23px;
   margin: 7px;
 }
 
@@ -85,7 +85,7 @@ nav img {
 
 #header li {
   margin-left: 30px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #header li a {
@@ -108,7 +108,7 @@ nav img {
 
 #mainVisual {
   max-width: 1600px;
-  height: calc();
+  height: 100%;
   
 }
 
@@ -123,12 +123,22 @@ nav img {
   background-color: rgb(238, 238, 238);
 }
 
-#about img {
+.about-img {
   width: 200px;
   border-radius: 50%;
   margin-right: 30px;
   align-self: flex-start;
 }
+
+.two-img{
+ display: flex;
+}
+
+.two-img img{
+  width:50%;
+}
+
+
 
 .section-title {
   font-family: "Bilo", "Helvetica Neue", Arial, sans-serif;
@@ -205,23 +215,28 @@ footer {
   }
 
   .site-title {
-    width: 150px;
+   
   }
 
   .site-title img {
-    width: 100%;
+    width: 70%;
   }
 
   #header li {
     margin-left: 18px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
+  #mainVisual {
+    height: 80%; 
+  }
+  
   #mainVisual img {
-    height: calc(100vh - 50px);
+    height: 95vh
+    
   }
 
-  #about img {
+ .about-img {
     width: 200px;
     border-radius: 50%;
     margin: 0px;
@@ -244,6 +259,16 @@ footer {
     margin-top: 20px;
   }
 
+  .two-img{
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .two-img img{
+     width:100%;
+   }
+
+
   #bike ul {
     padding: 0px;
     display: flex;
@@ -257,3 +282,9 @@ footer {
     font-size: 1rem;
   }
 }
+
+
+@media only screen and (max-width: 350px) {
+ 
+
+  }

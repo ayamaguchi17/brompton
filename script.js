@@ -1,5 +1,7 @@
 let langBtn = document.querySelector(".langBtn")
 let link = document.querySelectorAll(".link")
+let history = document.querySelector(".history")
+let design = document.querySelector(".design")
 let aboutTitle = document.querySelector(".about-title")
 let aboutName = document.querySelector(".about-name")
 let aboutText = document.querySelector(".about-text")
@@ -18,6 +20,8 @@ link.forEach((cl) => {
 
     let attr = cl.getAttribute("language")
 
+    history.textContent = data[attr].history
+    design.textContent = data[attr].design
     aboutTitle.textContent = data[attr].aboutTitle
     aboutName.textContent = data[attr].aboutName
     aboutText.textContent = data[attr].aboutText
@@ -33,11 +37,13 @@ link.forEach((cl) => {
 
 let data = {
   jp: {
-    aboutTitle: "About Brompton Fan",
-    aboutName: "山口晃",
+    history:"歴史",
+    design:"デザイン",
+    aboutTitle: "メイドインロンドン",
+    aboutName: "1975年創設",
     aboutText:
       "あれは偶然ほとんどこの始末院というののために持っでた。まあ時間に矛盾方はよくこの任命ますましかもに見から過ぎるたをは推測云いべきないて、そうにも出さうたらますた。はめに見せるたものもひとまず九月をどうかなくっましだ。もう大森さんが拡張主義ますます注意を待っなけれ主義この男私か解剖をってご懊悩うたですたて、その今はそちらか人格ろに進んながら、岩崎さんののを落語の私がどうもお撲殺と果せるて私兄をお安心を済んように同時にごお尋ねを与えないまして、ついもう見当を云うたがくるでし事から抱いますあっ。実はつまり肝権力を離さんは実際不愉快とふらしですて、こういう会をは犯さましてという他にほかならてならたなら。",
-    bikeTitle: "Limited Brompton",
+    bikeTitle: "Folding Bike",
     bikeName1: "CHPT3 V3",
     bikeText1:
       "コラボレーションが始まって5年になりますが、ストーリーはまだ始まったばかりのようです。Brompton x CHPT3 の第3章です。",
@@ -49,11 +55,13 @@ let data = {
       "NineStreetsはロンドンのBrompton工場で生産されています。各自転車は、ナインストリートのユニークな仕上げを作成するために最高品質の職人技で手作りです。",
   },
   en: {
-    aboutTitle: "About Brompton Fan",
-    aboutName: "Aki Yamaguchi",
+    history:"History",
+    design:"Design",
+    aboutTitle: "Made in London",
+    aboutName: "Since 1975",
     aboutText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis vulputate enim, vitae viverra turpis. Mauris commodo, tellus id dictum malesuada, metus tortor porttitor ante, in tempor leo risus eu diam. Pellentesque volutpat a risus a viverra. Etiam sed ligula turpis. Ut malesuada nisl est, vel aliquam elit pretium sed. Aliquam erat volutpat. Etiam id sem ut sapien feugiat pharetra. Pellentesque fringilla tortor quis odio eleifend finibus. Nunc aliquam luctus enim vel eleifend. Donec sollicitudin tincidunt justo, rhoncus accumsan mi lacinia eu. Aenean condimentum semper nisi. Nulla ornare magna id orci bibendum tempor gravida nec mauris. Cras tempor posuere varius. Suspendisse vulputate iaculis sapien ac faucibus. Nunc bibendum eleifend egestas. Curabitur non ligula nibh.",
-    bikeTitle: "Limited Brompton",
+    bikeTitle: "Folding Bike",
     bikeName1: "CHPT3 V3",
     bikeText1:
       "Donec sollicitudin tincidunt justo, rhoncus accumsan mi lacinia eu. Aenean condimentum semper nisi. Nulla ornare magna id orci bibendum tempor gravida nec mauris. Cras tempor posuere varius. Suspendisse vulputate iaculis sapien ac faucibus.",
