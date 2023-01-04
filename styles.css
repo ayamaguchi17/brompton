@@ -10,6 +10,7 @@ body {
   font-family: "Bilo", "Helvetica Neue", Arial, sans-serif;
   color: #383e45;
   letter-spacing: 0.5px;
+  line-height: 1.5rem;
 }
 
 a {
@@ -88,12 +89,12 @@ nav img {
   font-size: 18px;
 }
 
-#header li a {
+#header  a {
   color: #24292e;
   transition: 0.6s;
 }
 
-#header li a:hover {
+#header a:hover {
   color: #ae1b01;
 }
 
@@ -109,6 +110,7 @@ nav img {
 #mainVisual {
   max-width: 1600px;
   height: 100%;
+  margin:auto;
   
 }
 
@@ -136,17 +138,18 @@ nav img {
 
 .two-img img{
   width:50%;
+  margin-bottom: 50px;;
 }
-
-
 
 .section-title {
   font-family: "Bilo", "Helvetica Neue", Arial, sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   text-decoration: underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 5px;
   display: inline-block;
   margin-top: 50px;
+  margin-bottom: 40px;
+  color:#595959
 }
 
 #about .content {
@@ -172,21 +175,23 @@ nav img {
   justify-content: space-evenly;
 }
 
-#bike img {
-  /* max-width: 100%; */
-}
-
 #bike li {
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: 50px;
   text-align: center;
   flex: 1;
   font-size: 1rem;
 }
 
-#bike p {
-  margin-top: 10px;
-  margin-bottom: 50px;
+
+
+#bike h3{
+  margin-top:5px;
+}
+
+#bike p{
+  margin-top:8px;
 }
 
 #tri-img {
@@ -215,15 +220,12 @@ footer {
   }
 
   .site-title {
-   
+   width:30%;
   }
 
-  .site-title img {
-    width: 70%;
-  }
 
   #header li {
-    margin-left: 18px;
+    margin-left: 25px;
     font-size: 14px;
   }
 
@@ -268,6 +270,9 @@ footer {
      width:100%;
    }
 
+.bike-title{
+
+}
 
   #bike ul {
     padding: 0px;
@@ -276,15 +281,18 @@ footer {
     justify-content: space-evenly;
   }
 
-  #bike li {
-    padding: 30px 0px;
-    text-align: center;
-    font-size: 1rem;
-  }
+ 
 }
 
 
 @media only screen and (max-width: 350px) {
- 
+  #header li {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+  .site-title {
+    width:30%;
+   }
+  
 
   }
