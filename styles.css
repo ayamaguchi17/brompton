@@ -185,11 +185,10 @@ nav img {
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
   flex: 1;
   font-size: 1rem;
 }
-
 
 
 #bike h3{
