@@ -222,6 +222,29 @@ footer {
   font-size: 0.8rem;
 }
 
+#up-btn {
+  display: none;
+  mix-blend-mode: difference;
+  opacity: 80%;
+  font-size: 30px;
+  border: none;
+  padding: 0px;
+  position: fixed;
+  right: 15px;
+  bottom: 22px;
+  z-index: 99;
+  cursor: pointer;
+  background-color: #8e8e8e;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  line-height: 45px;
+  width: 30px;
+  height: 30px;
+  transition: all 1s ease-out;
+  
+}
+
 
 
 
